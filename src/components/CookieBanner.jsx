@@ -28,7 +28,7 @@ export default function CookieBanner({ onAccept }) {
 
         {/* Text */}
         <div className="flex-1">
-          <p className="text-brand-cream font-sans font-semibold text-sm mb-1">
+          <p className="text-brand-ink font-sans font-semibold text-sm mb-1">
             Diese Website verwendet technisch notwendige Cookies
           </p>
           <p className="text-brand-muted font-sans text-xs leading-relaxed">

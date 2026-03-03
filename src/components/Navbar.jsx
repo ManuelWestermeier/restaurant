@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link to="/" className="flex flex-col leading-none group">
-          <span className="font-display text-xl text-brand-cream tracking-wide group-hover:text-brand-gold transition-colors duration-300">
+          <span className="font-display text-xl text-brand-ink tracking-wide group-hover:text-brand-gold transition-colors duration-300">
             {CLIENT.firmenname}
           </span>
           <span className="text-[10px] font-sans font-light tracking-[0.3em] text-brand-gold uppercase mt-0.5">
@@ -53,7 +53,7 @@ export default function Navbar() {
                 end={link.href === '/'}
                 className={({ isActive }) =>
                   `font-sans text-sm font-medium tracking-wider uppercase transition-colors duration-300 relative group ${
-                    isActive ? 'text-brand-gold' : 'text-brand-muted hover:text-brand-cream'
+                    isActive ? 'text-brand-gold' : 'text-brand-muted hover:text-brand-ink'
                   }`
                 }
               >
@@ -87,9 +87,9 @@ export default function Navbar() {
           aria-expanded={menuOpen}
           className="md:hidden flex flex-col gap-1.5 p-2 group"
         >
-          <span className={`block w-6 h-px bg-brand-cream transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
-          <span className={`block w-6 h-px bg-brand-cream transition-all duration-300 ${menuOpen ? 'opacity-0 scale-x-0' : ''}`} />
-          <span className={`block w-6 h-px bg-brand-cream transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`} />
+          <span className={`block w-6 h-px bg-brand-ink transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
+          <span className={`block w-6 h-px bg-brand-ink transition-all duration-300 ${menuOpen ? 'opacity-0 scale-x-0' : ''}`} />
+          <span className={`block w-6 h-px bg-brand-ink transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`} />
         </button>
       </nav>
 
@@ -116,7 +116,7 @@ export default function Navbar() {
                     end={link.href === '/'}
                     className={({ isActive }) =>
                       `block font-sans text-base font-medium tracking-widest uppercase py-2 border-b border-brand-border/30 transition-colors ${
-                        isActive ? 'text-brand-gold' : 'text-brand-muted hover:text-brand-cream'
+                        isActive ? 'text-brand-gold' : 'text-brand-muted hover:text-brand-ink'
                       }`
                     }
                   >

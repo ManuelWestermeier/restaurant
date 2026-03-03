@@ -22,8 +22,8 @@ export default {
           'gold-pale': '#f5edd8',   // Hintergrundflächen mit Goldton
 
           // ─── Text ───────────────────────────────────
-          text:    '#18160f',   // Primärtext
-          textsec: '#4a4538',   // Sekundärtext
+          ink:       '#18160f',   // Primärtext  (nicht 'text' – Tailwind-reserviert)
+          secondary: '#4a4538',   // Sekundärtext
           muted:   '#8a8070',   // Beschreibungen / Metainfo
           subtle:  '#b5afa3',   // Sehr leiser Text / Platzhalter
 

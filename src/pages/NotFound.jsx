@@ -23,7 +23,7 @@ export default function NotFound() {
             className="-mt-8"
           >
             <p className="section-label mb-4">Seite nicht gefunden</p>
-            <h1 className="font-display text-3xl text-brand-cream mb-4">
+            <h1 className="font-display text-3xl text-brand-ink mb-4">
               Oops! Diese Seite existiert nicht.
             </h1>
             <p className="text-brand-muted font-sans text-sm leading-relaxed mb-8">

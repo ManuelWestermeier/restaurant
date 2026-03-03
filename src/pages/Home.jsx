@@ -87,7 +87,7 @@ function Hero() {
             initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9, delay: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="font-display text-display-xl text-brand-cream text-balance"
+            className="font-display text-display-xl text-brand-ink text-balance"
           >
             {CLIENT.hero.headingLine1}
           </motion.h1>
@@ -292,7 +292,7 @@ function Leistungen() {
                 <div className="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-6 text-brand-gold group-hover:bg-brand-gold/20 transition-colors duration-300">
                   {icons[item.icon] || icons.star}
                 </div>
-                <h3 className="font-display text-xl text-brand-cream mb-3">{item.titel}</h3>
+                <h3 className="font-display text-xl text-brand-ink mb-3">{item.titel}</h3>
                 <p className="font-sans text-sm text-brand-muted leading-relaxed">{item.beschreibung}</p>
                 <div className="mt-6 w-8 h-px bg-brand-gold/30 group-hover:w-16 group-hover:bg-brand-gold transition-all duration-500" />
               </div>
@@ -392,7 +392,7 @@ function Testimonials() {
                   {t.name.charAt(0)}
                 </div>
                 <div>
-                  <p className="font-sans font-semibold text-brand-cream text-sm">{t.name}</p>
+                  <p className="font-sans font-semibold text-brand-ink text-sm">{t.name}</p>
                   <p className="font-sans text-brand-muted text-xs">{t.rolle}</p>
                 </div>
               </div>
@@ -433,7 +433,7 @@ function Oeffnungszeiten() {
             <div className="space-y-3">
               {CLIENT.oeffnungszeiten.map((item, i) => (
                 <div key={i} className="flex justify-between items-center py-3 border-b border-brand-border/50">
-                  <span className="font-sans font-medium text-brand-cream text-sm">{item.tag}</span>
+                  <span className="font-sans font-medium text-brand-ink text-sm">{item.tag}</span>
                   <span className={`font-sans text-sm ${item.zeiten === 'Geschlossen' ? 'text-brand-muted italic' : 'text-brand-gold'}`}>
                     {item.zeiten}
                   </span>
@@ -462,7 +462,7 @@ function Oeffnungszeiten() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-brand-cream font-sans font-medium text-sm">{CLIENT.strasse}</p>
+                  <p className="text-brand-ink font-sans font-medium text-sm">{CLIENT.strasse}</p>
                   <p className="text-brand-muted font-sans text-sm">{CLIENT.plz} {CLIENT.ort}</p>
                 </div>
               </div>
@@ -472,7 +472,7 @@ function Oeffnungszeiten() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
                   </svg>
                 </div>
-                <a href={`tel:${CLIENT.telefon}`} className="text-brand-cream font-sans text-sm hover:text-brand-gold transition-colors">
+                <a href={`tel:${CLIENT.telefon}`} className="text-brand-ink font-sans text-sm hover:text-brand-gold transition-colors">
                   {CLIENT.telefon}
                 </a>
               </div>
@@ -482,7 +482,7 @@ function Oeffnungszeiten() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
                   </svg>
                 </div>
-                <a href={`mailto:${CLIENT.email}`} className="text-brand-cream font-sans text-sm hover:text-brand-gold transition-colors">
+                <a href={`mailto:${CLIENT.email}`} className="text-brand-ink font-sans text-sm hover:text-brand-gold transition-colors">
                   {CLIENT.email}
                 </a>
               </div>
