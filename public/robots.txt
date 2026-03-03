@@ -1,3 +1,6 @@
-Allow /
+User-agent: *
+Allow: /
+Disallow: /api/
 
-Sitemap: /sitemap.xml
+# Sitemap
+Sitemap: https://[DOMAIN].de/sitemap.xml
