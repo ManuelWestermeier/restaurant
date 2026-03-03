@@ -4,6 +4,7 @@ function App() {
   return (
     <BrowserRouter>
       <Route path="/" />
+      <Route path="/kontakt" />
       <Route path="/impressum" />
       <Route path="/datenschutz" />
       <Route path="/" />
